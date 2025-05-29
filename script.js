@@ -20,6 +20,7 @@ searchform.addEventListener("submit", async event => {
         des.innerText= data.weather[0].description;
         emoji.innerText= getWeatherEmoji(data.weather[0].id);
     } catch (error) {
+        city.textContent = `Area: undefined`;
         temp.textContent = `Temperature: null`;
         humid.textContent = `Humidity: null`;
         console.error(error);
