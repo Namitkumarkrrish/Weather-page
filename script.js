@@ -23,6 +23,8 @@ searchform.addEventListener("submit", async event => {
         city.textContent = `Area: undefined`;
         temp.textContent = `Temperature: null`;
         humid.textContent = `Humidity: null`;
+        des.innerText= "None";
+        emoji.innerText= "";
         console.error(error);
     }
 });
